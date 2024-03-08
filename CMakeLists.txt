@@ -15,7 +15,6 @@ find_package(OpenCV REQUIRED)
 
 include_directories(
         ${OpenCV_INCLUDE_DIRS}
-        "src"
 )
 link_directories(
         ${OpenCV_LIBS}
@@ -28,7 +27,9 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(opencv_study main.cpp)
+add_executable(opencv_study main.cpp
+        src/ui/VideoPlay.cpp
+        tool/tinyxml2.cpp)
 
 
 target_link_libraries(opencv_study

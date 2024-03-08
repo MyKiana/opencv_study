@@ -1,11 +1,11 @@
 #include <QApplication>
 #include <QPushButton>
 #include "tool/tinyxml2.h"
+#include "src/ui/VideoPlay.h"
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
-    QWidget *widget = new QWidget();
-    widget->resize(200, 100);
-    widget->show();
+    VideoPlay *v = new VideoPlay();
+    v->show();
     return QApplication::exec();
 }
