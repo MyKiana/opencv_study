@@ -1,0 +1,4 @@
+E:/AllCode/Qt/opencv_study/cmake-build-debug/CMakeFiles/opencv_study.dir
+E:/AllCode/Qt/opencv_study/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/AllCode/Qt/opencv_study/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/AllCode/Qt/opencv_study/cmake-build-debug/CMakeFiles/opencv_study_autogen.dir
