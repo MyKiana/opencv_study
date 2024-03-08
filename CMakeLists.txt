@@ -8,6 +8,11 @@ set(CMAKE_AUTOUIC ON)
 
 set(CMAKE_PREFIX_PATH "D:/SoftWare/Qt/5.14.2/msvc2017_64")
 
+set(CMAKE_PREFIX_PATH "D:/SoftWare/Qt/5.14.2/msvc2017_64")
+set(OpenCV_DIR "D:/SoftWare/opencv/opencv4.7.0_notcuda/x64/vc15/lib")
+
+find_package(OpenCV REQUIRED)
+
 find_package(Qt5 COMPONENTS
         Core
         Gui
