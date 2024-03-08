@@ -33,6 +33,13 @@ void VideoPlay::getPicture() {
     Mat frame;
     cap >> frame; // 从摄像头捕获一帧
 
+    //转变成灰色
+    cvtColor(frame, frame, cv::COLOR_BGR2GRAY);
+
+    //二值化
+    threshold(frame, frame, 120, 255, cv::THRESH_BINARY);
+
+
     if (!frame.empty()) {
         cv::cvtColor(frame, frame, cv::COLOR_BGR2RGB); // 转换为RGB格式
         QImage img((const unsigned char*)(frame.data), frame.cols, frame.rows, frame.cols*frame.channels(), QImage::Format_RGB888);
@@ -69,6 +76,4 @@ void VideoPlay::resizeEvent(QResizeEvent *event) {
     QWidget::resizeEvent(event);
     ui->label->setFixedWidth(this->width());
     ui->label->setFixedHeight(this->height());
-
-    qDebug() << this->width() << "------------" << ui->label->width();
 }
