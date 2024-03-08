@@ -30,6 +30,12 @@ public:
 
     void initTimer(int time = 30);
 
+    void openCamera();
+
+    void initUI();
+
+    void resizeEvent(QResizeEvent *event) override;
+
 public slots:
     void getPicture();
 

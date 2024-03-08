@@ -6,6 +6,8 @@
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     VideoPlay *v = new VideoPlay();
+    v->setFixedHeight(700);
+    v->setFixedWidth(1000);
     v->show();
     return QApplication::exec();
 }
